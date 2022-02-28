@@ -1,0 +1,26 @@
+@media only screen and (min-width: 1024px) {
+    .pictures:before {
+        content: "";
+        position: absolute;
+        right: -35%;
+        width: 40%;
+        height: 200%;
+        background: url(https://s9.limitedrun.com/images/1440012/ripped.png);
+        background-size: auto 100%;
+        background-position: top left;
+        background-repeat: no-repeat;
+        z-index: 10;
+    }
+    .videos:before {
+        content: "";
+        position: absolute;
+        left: -15%;
+        width: 40%;
+        height: 200%;
+        background: url(https://s9.limitedrun.com/images/1440012/ripped.png);
+        background-size: auto 100%;
+        background-position: top left;
+        background-repeat: no-repeat;
+        z-index: 10;
+    }
+}
