@@ -2,10 +2,10 @@
     .pictures:before {
         content: "";
         position: absolute;
-        right: -35%;
-        width: 40%;
-        height: 200%;
-        background: url(https://s9.limitedrun.com/images/1440012/ripped.png);
+        right: -15%;
+        width: 50%;
+        height: 100%;
+        background: url("../lib/ripped.png");
         background-size: auto 100%;
         background-position: top left;
         background-repeat: no-repeat;
@@ -17,10 +17,15 @@
         left: -15%;
         width: 40%;
         height: 200%;
-        background: url(https://s9.limitedrun.com/images/1440012/ripped.png);
+        background: url("../lib/ripped.png");
         background-size: auto 100%;
         background-position: top left;
         background-repeat: no-repeat;
         z-index: 10;
+    }
+    .videos {
+        position: absolute;
+        left: 67%;
+        height: 100%;
     }
 }

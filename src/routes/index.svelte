@@ -4,6 +4,11 @@
 	import logo from '../lib/logo.png';
 	import shows from '../lib/shows.png';
 	import store from '../lib/store.png';
+	import img1 from '../lib/background-photos/IMG_2638.jpg';
+	import img2 from '../lib/background-photos/IMG_2655.jpg';
+	import img3 from '../lib/background-photos/IMG_2662.jpg';
+	import img4 from '../lib/background-photos/IMG_2698.jpg';
+	import img5 from '../lib/background-photos/IMG_2730.jpg';
 	import { page } from '$app/stores';
 
 	// Import Swiper styles
@@ -14,10 +19,7 @@
 
 	import { Autoplay, EffectFade, Lazy } from 'swiper';
 
-	let leftImages = [
-		'https://drive.google.com/uc?export=view&id=1eqlIvuVp_-X6J7MR8yju5i0gwyXpxu8z',
-		'https://drive.google.com/uc?export=view&id=1fZ3Pb-D2df3RA_s87-5ObjjJN-Gud3-A'
-	];
+	let leftImages = [img1, img2, img3, img4, img5];
 
 	let videos = [
 		'https://media1.giphy.com/media/Vf3Rrp0lhDDJBxWAve/giphy.gif?cid=ecf05e47k1ye5svlq5xm2d7xort4ii5ghealyzxngb92c54c&rid=giphy.gif&ct=g',
@@ -47,7 +49,7 @@
 	>
 		{#each leftImages as image}
 			<SwiperSlide>
-				<img class="w-full h-full" src={image} />
+				<img class="w-full h-screen" src={image} alt="background image" />
 			</SwiperSlide>
 		{/each}
 	</Swiper>
@@ -86,11 +88,11 @@
 				navigation={false}
 				speed={3000}
 				modules={[Autoplay, EffectFade, Lazy]}
-				class="videos h-screen w-2/3"
+				class="videos h-full w-1/3"
 			>
 				{#each videos as video}
 					<SwiperSlide>
-						<img class="w-full h-full" src={video} />
+						<img class="w-full h-screen" src={video} />
 					</SwiperSlide>
 				{/each}
 			</Swiper>
